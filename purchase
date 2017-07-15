@@ -1,0 +1,35 @@
+<?php
+
+class purchase 
+ {
+  public  $screen;
+  public  $mouse;
+  public  $keyboard;
+  public  $computer;
+
+ 
+   public function __construct($screen,$mouse,$keyboard,$computer){
+    $this->screen=$screen;
+    $this->mouse=$mouse;
+    $this->keyboard=$keyboard;   
+    $this->computer=$computer;
+    
+ }
+
+public function getSpecs(){
+    return  $this->screen .' '.$this->mouse .' '.$this->keyboard.' '.$this->computer;
+ }
+ 
+$pur=new purchase=(3,5,8,9);
+
+function getFullPurchaseDetails(){
+  return  $pur->getSpecs();
+}
+getFullPurchaseDetails();
+
+
+
+
+
+
+?>
